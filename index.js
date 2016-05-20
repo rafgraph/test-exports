@@ -1,6 +1,8 @@
+let a = 1;
 
 export function detectTouchNow() {
-  console.log('detectTouchNow function run')
+  setTimeout(() => a += 1,0);
+  return a;
 }
 
 export default detectTouchNow();
