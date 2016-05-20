@@ -1,8 +1,18 @@
+import React from 'react';
+import { render } from 'react-dom';
 import touchDetected, { detectTouchNow } from './index.js';
 
-console.log(touchDetected);
+class App extends React.Component {
+  render() {
+    console.log('App render:');
+    console.log(`Value evaluated on import: ${touchDetected}`);
+    console.log(`Value calculated now with function call: ${detectTouchNow()}`);
+    return(
+      <button onClick={() => this.forceUpdate()}>
+        click to force update and log values from import
+      </button>
+    );
+  }
+}
 
-setTimeout(() => {
-  console.log(detectTouchNow());
-  console.log(touchDetected)
-}, 100);
+render(<App />, document.getElementById("root"))

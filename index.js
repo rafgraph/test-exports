@@ -1,7 +1,7 @@
-let a = 1;
+let a = 0;
 
 export function detectTouchNow() {
-  setTimeout(() => a += 1,0);
+  a += 1;
   return a;
 }
 
