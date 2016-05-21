@@ -24,8 +24,11 @@ class App extends React.Component {
       <div>
         <p>
           This is a simple test to check when exported functions are evaluated
-          <a style={{display: "block"}} href="https://github.com/rafrex/test-export-value">
-            https://github.com/rafrex/test-export-value
+          <a
+            style={{display: "block"}}
+            href="https://github.com/rafrex/test-exported-functions"
+          >
+            https://github.com/rafrex/test-exported-functions
           </a>
         </p>
         <button onClick={this.addDates}>

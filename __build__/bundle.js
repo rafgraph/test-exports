@@ -98,8 +98,11 @@
 	          'This is a simple test to check when exported functions are evaluated',
 	          _react2.default.createElement(
 	            'a',
-	            { style: { display: "block" }, href: 'https://github.com/rafrex/test-export-value' },
-	            'https://github.com/rafrex/test-export-value'
+	            {
+	              style: { display: "block" },
+	              href: 'https://github.com/rafrex/test-exported-functions'
+	            },
+	            'https://github.com/rafrex/test-exported-functions'
 	          )
 	        ),
 	        _react2.default.createElement(
