@@ -1,21 +1,19 @@
 {
-  "name": "detect-touch",
+  "name": "test-export-value",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test when exported functions are evaluated",
+  "author": "Rafael Pedicini <code@rafrex.com>",
+  "license": "MIT",
+  "private": "true",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/detect-touch.git"
+    "url": "git+https://github.com/rafrex/test-exported-functions.git"
   },
-  "author": "",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rafrex/detect-touch/issues"
+    "url": "https://github.com/rafrex/test-exported-functions/issues"
   },
-  "homepage": "https://github.com/rafrex/detect-touch#readme",
+  "homepage": "https://github.com/rafrex/test-exported-functions#readme",
   "dependencies": {
     "babel-core": "^6.9.0",
     "babel-loader": "^6.2.4",
