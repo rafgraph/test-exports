@@ -1,19 +1,16 @@
 {
-  "name": "test-export-value",
-  "version": "1.0.0",
-  "description": "Test when exported functions are evaluated",
+  "name": "test-exports",
+  "description": "Test exported values",
+  "scripts": {
+    "start": "webpack -d --watch & live-server"
+  },
   "author": "Rafael Pedicini <code@rafrex.com>",
   "license": "MIT",
   "private": "true",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rafrex/test-exported-functions.git"
   },
-  "bugs": {
-    "url": "https://github.com/rafrex/test-exported-functions/issues"
-  },
-  "homepage": "https://github.com/rafrex/test-exported-functions#readme",
   "dependencies": {
     "babel-core": "^6.9.0",
     "babel-loader": "^6.2.4",
