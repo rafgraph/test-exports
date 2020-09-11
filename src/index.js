@@ -36,9 +36,9 @@ class App extends React.Component {
       <div>
         <a
           style={{display: 'block'}}
-          href="https://github.com/rafrex/test-exports"
+          href="https://github.com/rafgraph/test-exports"
           >
-          https://github.com/rafrex/test-exports
+          https://github.com/rafgraph/test-exports
         </a>
         <h4>
           Check when exported functions are evaluated

@@ -4,12 +4,12 @@
   "scripts": {
     "start": "webpack -d --watch & live-server"
   },
-  "author": "Rafael Pedicini <code@rafrex.com>",
+  "author": "Rafael Pedicini <rafael@rafgraph.dev>",
   "license": "MIT",
   "private": "true",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/test-exported-functions.git"
+    "url": "git+https://github.com/rafgraph/test-exported-functions.git"
   },
   "dependencies": {
     "babel-core": "^6.9.0",

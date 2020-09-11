@@ -1,5 +1,5 @@
 # Test Exports
-[Live test](http://test-exports.rafrex.com)
+[Live test](https://test-exports.rafgraph.dev)
 
 A simple test to check exports.
 

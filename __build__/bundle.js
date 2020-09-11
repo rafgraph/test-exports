@@ -117,9 +117,9 @@
 	          'a',
 	          {
 	            style: { display: 'block' },
-	            href: 'https://github.com/rafrex/test-exports'
+	            href: 'https://github.com/rafgraph/test-exports'
 	          },
-	          'https://github.com/rafrex/test-exports'
+	          'https://github.com/rafgraph/test-exports'
 	        ),
 	        _react2.default.createElement(
 	          'h4',
@@ -4383,8 +4383,8 @@
 	 *
 	 * Although this may be confusing, it performs better in general.
 	 *
-	 * @see http://jsperf.com/key-exists
-	 * @see http://jsperf.com/key-missing
+	 * @see https://jsperf.com/key-exists
+	 * @see https://jsperf.com/key-missing
 	 */
 	var DOMProperty = {
 	
@@ -4958,7 +4958,7 @@
 	
 	/**
 	 * Create an `onBeforeInput` event to match
-	 * http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.
+	 * https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.
 	 *
 	 * This event plugin is based on the native `textInput` event
 	 * available in Chrome, Safari, Opera, and IE. This event fires after
@@ -6368,7 +6368,7 @@
 	
 	/**
 	 * @interface Event
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/#events-compositionevents
+	 * @see https://www.w3.org/TR/DOM-Level-3-Events/#events-compositionevents
 	 */
 	var CompositionEventInterface = {
 	  data: null
@@ -6422,7 +6422,7 @@
 	
 	/**
 	 * @interface Event
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/
+	 * @see https://www.w3.org/TR/DOM-Level-3-Events/
 	 */
 	var EventInterface = {
 	  type: null,
@@ -6682,7 +6682,7 @@
 	
 	/**
 	 * @interface Event
-	 * @see http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105
+	 * @see https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105
 	 *      /#events-inputevents
 	 */
 	var InputEventInterface = {
@@ -8137,7 +8137,7 @@
 	  }
 	
 	  // Safari may fire events on text nodes (Node.TEXT_NODE is 3).
-	  // @see http://www.quirksmode.org/js/events_properties.html
+	  // @see https://www.quirksmode.org/js/events_properties.html
 	  return target.nodeType === 3 ? target.parentNode : target;
 	}
 	
@@ -8169,7 +8169,7 @@
 	if (ExecutionEnvironment.canUseDOM) {
 	  useHasFeature = document.implementation && document.implementation.hasFeature &&
 	  // always returns true in newer browsers as per the standard.
-	  // @see http://dom.spec.whatwg.org/#dom-domimplementation-hasfeature
+	  // @see https://dom.spec.whatwg.org/#dom-domimplementation-hasfeature
 	  document.implementation.hasFeature('', '') !== true;
 	}
 	
@@ -8232,7 +8232,7 @@
 	'use strict';
 	
 	/**
-	 * @see http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary
+	 * @see https://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary
 	 */
 	
 	var supportedInputTypes = {
@@ -8435,7 +8435,7 @@
 	
 	/**
 	 * @interface MouseEvent
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/
+	 * @see https://www.w3.org/TR/DOM-Level-3-Events/
 	 */
 	var MouseEventInterface = {
 	  screenX: null,
@@ -8514,7 +8514,7 @@
 	
 	/**
 	 * @interface UIEvent
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/
+	 * @see https://www.w3.org/TR/DOM-Level-3-Events/
 	 */
 	var UIEventInterface = {
 	  view: function (event) {
@@ -8612,7 +8612,7 @@
 	
 	/**
 	 * Translation from modifier key to the associated property in the event.
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
+	 * @see https://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
 	 */
 	
 	var modifierKeyToProp = {
@@ -8829,7 +8829,7 @@
 	    // color is for Safari mask-icon link
 	    color: 0,
 	    // itemProp, itemScope, itemType are for
-	    // Microdata support. See http://schema.org/docs/gs.html
+	    // Microdata support. See https://schema.org/docs/gs.html
 	    itemProp: 0,
 	    itemScope: HAS_BOOLEAN_VALUE,
 	    itemType: 0,
@@ -9454,7 +9454,7 @@
 	 *
 	 * @param {string} markup String of markup.
 	 * @return {string} Node name of the supplied markup.
-	 * @see http://jsperf.com/extract-nodename
+	 * @see https://jsperf.com/extract-nodename
 	 */
 	function getNodeName(markup) {
 	  return markup.substring(1, markup.indexOf(' '));
@@ -9837,7 +9837,7 @@
 	var tableWrap = [1, '<table>', '</table>'];
 	var trWrap = [3, '<table><tbody><tr>', '</tr></tbody></table>'];
 	
-	var svgWrap = [1, '<svg xmlns="http://www.w3.org/2000/svg">', '</svg>'];
+	var svgWrap = [1, '<svg xmlns="https://www.w3.org/2000/svg">', '</svg>'];
 	
 	var markupWrap = {
 	  '*': [1, '?<div>', '</div>'],
@@ -10285,7 +10285,7 @@
 	
 	// We accept any tag to be rendered but since this gets injected into arbitrary
 	// HTML, we want to make sure that it's a safe tag.
-	// http://www.w3.org/TR/REC-xml/#NT-Name
+	// https://www.w3.org/TR/REC-xml/#NT-Name
 	
 	var VALID_TAG_REGEX = /^[a-zA-Z][a-zA-Z:_\.\-\d]*$/; // Simplified subset
 	var validatedTagCache = {};
@@ -10498,7 +10498,7 @@
 	   * This method has side effects because events get registered.
 	   *
 	   * Iterating over object properties is faster than iterating over arrays.
-	   * @see http://jsperf.com/obj-vs-arr-iteration
+	   * @see https://jsperf.com/obj-vs-arr-iteration
 	   *
 	   * @private
 	   * @param {ReactReconcileTransaction|ReactServerRenderingTransaction} transaction
@@ -10593,11 +10593,11 @@
 	      // a newline specifically to get eaten by the parser. (Alternately for
 	      // textareas, replacing "^\n" with "\r\n" doesn't get eaten, and the first
 	      // \r is normalized out by HTMLTextAreaElement#value.)
-	      // See: <http://www.w3.org/TR/html-polyglot/#newlines-in-textarea-and-pre>
-	      // See: <http://www.w3.org/TR/html5/syntax.html#element-restrictions>
-	      // See: <http://www.w3.org/TR/html5/syntax.html#newlines>
+	      // See: <https://www.w3.org/TR/html-polyglot/#newlines-in-textarea-and-pre>
+	      // See: <https://www.w3.org/TR/html5/syntax.html#element-restrictions>
+	      // See: <https://www.w3.org/TR/html5/syntax.html#newlines>
 	      // See: Parsing of "textarea" "listing" and "pre" elements
-	      //  from <http://www.w3.org/TR/html5/syntax.html#parsing-main-inbody>
+	      //  from <https://www.w3.org/TR/html5/syntax.html#parsing-main-inbody>
 	      return '\n' + ret;
 	    } else {
 	      return ret;
@@ -11273,7 +11273,7 @@
 	 * Most style properties can be unset by doing .style[prop] = '' but IE8
 	 * doesn't like doing that with shorthand properties so for the properties that
 	 * IE8 breaks on, which are listed here, we instead unset each of the
-	 * individual properties. See http://bugs.jquery.com/ticket/12385.
+	 * individual properties. See https://bugs.jquery.com/ticket/12385.
 	 * The 4-value 'clock' properties like margin, padding, border-width seem to
 	 * behave without any problems. Curiously, list-style works too without any
 	 * special prodding.
@@ -11373,7 +11373,7 @@
 	 *   < "msTransition"
 	 *
 	 * As Andi Smith suggests
-	 * (http://www.andismith.com/blog/2012/02/modernizr-prefixed/), an `-ms` prefix
+	 * (https://www.andismith.com/blog/2012/02/modernizr-prefixed/), an `-ms` prefix
 	 * is converted to lowercase `ms`.
 	 *
 	 * @param {string} string
@@ -11466,7 +11466,7 @@
 	  // the markup. If you provide unsafe user data here they can inject
 	  // arbitrary CSS which may be problematic (I couldn't repro this):
 	  // https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
-	  // http://www.thespanner.co.uk/2007/11/26/ultimate-xss-css-injection/
+	  // https://www.thespanner.co.uk/2007/11/26/ultimate-xss-css-injection/
 	  // This is not an XSS hole but instead a potential CSS injection issue
 	  // which has lead to a greater discussion about how we're going to
 	  // trust URLs moving forward. See #2115901
@@ -11544,7 +11544,7 @@
 	 *   > hyphenateStyleName('msTransition')
 	 *   < "-ms-transition"
 	 *
-	 * As Modernizr suggests (http://modernizr.com/docs/#prefixed), an `ms` prefix
+	 * As Modernizr suggests (https://modernizr.com/docs/#prefixed), an `ms` prefix
 	 * is converted to `-ms-`.
 	 *
 	 * @param {string} string
@@ -11656,9 +11656,9 @@
 	'use strict';
 	
 	var DOMNamespaces = {
-	  html: 'http://www.w3.org/1999/xhtml',
-	  mathml: 'http://www.w3.org/1998/Math/MathML',
-	  svg: 'http://www.w3.org/2000/svg'
+	  html: 'https://www.w3.org/1999/xhtml',
+	  mathml: 'https://www.w3.org/1998/Math/MathML',
+	  svg: 'https://www.w3.org/2000/svg'
 	};
 	
 	module.exports = DOMNamespaces;
@@ -12319,7 +12319,7 @@
 	   * top-level listeners to the document object only, at least for these
 	   * movement types of events and possibly all events.
 	   *
-	   * @see http://www.quirksmode.org/blog/archives/2010/09/click_event_del.html
+	   * @see https://www.quirksmode.org/blog/archives/2010/09/click_event_del.html
 	   *
 	   * Also, `keyup`/`keypress`/`keydown` do not bubble to the window on IE, but
 	   * they bubble to document.
@@ -12343,7 +12343,7 @@
 	            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topWheel, 'mousewheel', mountAt);
 	          } else {
 	            // Firefox needs to capture a different mouse scroll event.
-	            // @see http://www.quirksmode.org/dom/events/tests/scroll.html
+	            // @see https://www.quirksmode.org/dom/events/tests/scroll.html
 	            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topWheel, 'DOMMouseScroll', mountAt);
 	          }
 	        } else if (dependency === topLevelTypes.topScroll) {
@@ -12360,7 +12360,7 @@
 	            ReactBrowserEventEmitter.ReactEventListener.trapCapturedEvent(topLevelTypes.topBlur, 'blur', mountAt);
 	          } else if (isEventSupported('focusin')) {
 	            // IE has `focusin` and `focusout` events which bubble.
-	            // @see http://www.quirksmode.org/blog/archives/2008/04/delegating_the.html
+	            // @see https://www.quirksmode.org/blog/archives/2008/04/delegating_the.html
 	            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topFocus, 'focusin', mountAt);
 	            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topBlur, 'focusout', mountAt);
 	          }
@@ -12394,7 +12394,7 @@
 	   *
 	   * NOTE: Scroll events do not bubble.
 	   *
-	   * @see http://www.quirksmode.org/dom/events/scroll.html
+	   * @see https://www.quirksmode.org/dom/events/scroll.html
 	   */
 	  ensureScrollValueMonitoring: function () {
 	    if (hasEventPageXY === undefined) {
@@ -12719,7 +12719,7 @@
 	 * The rendered element will be initialized as unchecked (or `defaultChecked`)
 	 * with an empty value (or `defaultValue`).
 	 *
-	 * @see http://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html
+	 * @see https://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html
 	 */
 	var ReactDOMInput = {
 	  getNativeProps: function (inst, props) {
@@ -16699,7 +16699,7 @@
 	 * you may not use this file except in compliance with the License.
 	 * You may obtain a copy of the License at
 	 *
-	 * http://www.apache.org/licenses/LICENSE-2.0
+	 * https://www.apache.org/licenses/LICENSE-2.0
 	 *
 	 * Unless required by applicable law or agreed to in writing, software
 	 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -17647,8 +17647,8 @@
 	'use strict';
 	
 	var NS = {
-	  xlink: 'http://www.w3.org/1999/xlink',
-	  xml: 'http://www.w3.org/XML/1998/namespace'
+	  xlink: 'https://www.w3.org/1999/xlink',
+	  xml: 'https://www.w3.org/XML/1998/namespace'
 	};
 	
 	// We use attributes for everything SVG so let's avoid some duplication and run
@@ -18670,7 +18670,7 @@
 	      case topLevelTypes.topVolumeChange:
 	      case topLevelTypes.topWaiting:
 	        // HTML Events
-	        // @see http://www.w3.org/TR/html5/index.html#events-0
+	        // @see https://www.w3.org/TR/html5/index.html#events-0
 	        EventConstructor = SyntheticEvent;
 	        break;
 	      case topLevelTypes.topKeyPress:
@@ -18798,7 +18798,7 @@
 	
 	/**
 	 * @interface Event
-	 * @see http://www.w3.org/TR/css3-animations/#AnimationEvent-interface
+	 * @see https://www.w3.org/TR/css3-animations/#AnimationEvent-interface
 	 * @see https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent
 	 */
 	var AnimationEventInterface = {
@@ -18845,7 +18845,7 @@
 	
 	/**
 	 * @interface Event
-	 * @see http://www.w3.org/TR/clipboard-apis/
+	 * @see https://www.w3.org/TR/clipboard-apis/
 	 */
 	var ClipboardEventInterface = {
 	  clipboardData: function (event) {
@@ -18891,7 +18891,7 @@
 	
 	/**
 	 * @interface FocusEvent
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/
+	 * @see https://www.w3.org/TR/DOM-Level-3-Events/
 	 */
 	var FocusEventInterface = {
 	  relatedTarget: null
@@ -18939,7 +18939,7 @@
 	
 	/**
 	 * @interface KeyboardEvent
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/
+	 * @see https://www.w3.org/TR/DOM-Level-3-Events/
 	 */
 	var KeyboardEventInterface = {
 	  key: getEventKey,
@@ -19195,7 +19195,7 @@
 	
 	/**
 	 * @interface DragEvent
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/
+	 * @see https://www.w3.org/TR/DOM-Level-3-Events/
 	 */
 	var DragEventInterface = {
 	  dataTransfer: null
@@ -19241,7 +19241,7 @@
 	
 	/**
 	 * @interface TouchEvent
-	 * @see http://www.w3.org/TR/touch-events/
+	 * @see https://www.w3.org/TR/touch-events/
 	 */
 	var TouchEventInterface = {
 	  touches: null,
@@ -19292,7 +19292,7 @@
 	
 	/**
 	 * @interface Event
-	 * @see http://www.w3.org/TR/2009/WD-css3-transitions-20090320/#transition-events-
+	 * @see https://www.w3.org/TR/2009/WD-css3-transitions-20090320/#transition-events-
 	 * @see https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent
 	 */
 	var TransitionEventInterface = {
@@ -19339,7 +19339,7 @@
 	
 	/**
 	 * @interface WheelEvent
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/
+	 * @see https://www.w3.org/TR/DOM-Level-3-Events/
 	 */
 	var WheelEventInterface = {
 	  deltaX: function (event) {
@@ -20070,7 +20070,7 @@
 	    container = container.documentElement;
 	  }
 	
-	  // http://jsperf.com/emptying-a-node
+	  // https://jsperf.com/emptying-a-node
 	  while (container.lastChild) {
 	    container.removeChild(container.lastChild);
 	  }
